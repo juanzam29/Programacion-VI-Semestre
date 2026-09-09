@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header id="inicio">
+        
+        <div class="banner">
+            <img id="imagen-banner" src="img/paisaje-1.jpg" alt="Paisaje de montañas y lago, imagen 1">
+            <div class="controles">
+                <button id="anterior" type="button" aria-label="Imagen anterior">&lt;</button>
+                <span id="contador" aria-live="polite">1 / 6</span>
+                <button id="siguiente" type="button" aria-label="Imagen siguiente">&gt;</button>
+            </div>
+        </div>
+
+        <nav class="menu" aria-label="Menú principal">
+            <a href="#inicio">Inicio</a>
+            <div class="item-menu">
+                <button class="boton-menu" type="button" aria-expanded="false" aria-controls="nosotros">Nosotros ▾</button>
+                <ul class="submenu" id="nosotros" hidden>
+                    
+                    <li><span>Historia</span></li>
+                    <li><span>Nuestro equipo</span></li>
+                </ul>
+            </div>
+            <div class="item-menu">
+                <button class="boton-menu" type="button" aria-expanded="false" aria-controls="servicios">Servicios ▾</button>
+                <ul class="submenu" id="servicios" hidden>
+                    <li><span>Fotografía</span></li>
+                    <li><span>Diseño</span></li>
+                    <li><span>Eventos</span></li>
+                </ul>
+            </div>
+            <div class="item-menu">
+                <button class="boton-menu" type="button" aria-expanded="false" aria-controls="contacto">Contacto ▾</button>
+                <ul class="submenu" id="contacto" hidden>
+                    <li><span>Escríbenos</span></li>
+                    <li><span>Ubicación</span></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+</body>
+</html>
