@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #14181f;
+  color: #f3f4f6;
+}
+
+.encabezado {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.encabezado h1 {
+  color: #f59e0b;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.buscador input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.boton-filtro {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  background-color: #2a2f3a;
+  color: #f3f4f6;
+  cursor: pointer;
+}
+
+.boton-filtro.activo {
+  background-color: #f59e0b;
+  color: #14181f;
+  font-weight: bold;
+}
+
+.lista-peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 10px 30px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: #1f232c;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.info-tarjeta {
+  padding: 14px;
+}
+
+.info-tarjeta h3 {
+  margin: 0 0 8px;
+}
+
+.info-tarjeta p {
+  margin: 4px 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.boton-detalles {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f59e0b;
+  color: #14181f;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton-favorito {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  float: right;
+}
+
+.pie-pagina {
+  text-align: center;
+  padding: 20px;
+  color: #cbd5e1;
+}
+
+.ventana-detalles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.caja-detalles {
+  background-color: #1f232c;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.caja-detalles img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.boton-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #f3f4f6;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

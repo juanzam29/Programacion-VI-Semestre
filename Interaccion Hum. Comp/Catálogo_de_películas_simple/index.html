@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineWorld</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1>CineWorld</h1>
+      <p>Encuentra tu próxima película favorita</p>
+    </header>
+
+    <div class="buscador">
+      <input
+        type="text"
+        id="cajaBusqueda"
+        placeholder="Buscar por título..."
+        onkeyup="buscarPeliculas()"
+      />
+    </div>
+
+    <div class="filtros">
+      <button class="boton-filtro activo" onclick="filtrarPorGenero('todas', this)">Todas</button>
+      <button class="boton-filtro" onclick="filtrarPorGenero('Acción', this)">Acción</button>
+      <button class="boton-filtro" onclick="filtrarPorGenero('Comedia', this)">Comedia</button>
+      <button class="boton-filtro" onclick="filtrarPorGenero('Terror', this)">Terror</button>
+      <button class="boton-filtro" onclick="filtrarPorGenero('Ciencia ficción', this)">Ciencia ficción</button>
+      <button class="boton-filtro" onclick="filtrarPorGenero('Animación', this)">Animación</button>
+    </div>
+
+    <main id="listaPeliculas" class="lista-peliculas"></main>
+
+    <footer class="pie-pagina">
+      <p>CineWorld 2026 - Catálogo de películas</p>
+    </footer>
+
+    <div id="ventanaDetalles" class="ventana-detalles oculto">
+      <div class="caja-detalles">
+        <button class="boton-cerrar" onclick="cerrarDetalles()">X</button>
+        <div id="contenidoDetalles"></div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
