@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+.controles {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.controles input, .controles select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#catalogo {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pelicula {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.pelicula:hover {
+    transform: scale(1.03);
+}
+
+.pelicula img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.pelicula h3 {
+    margin: 10px 5px 5px 5px;
+    font-size: 17px;
+}
+
+.pelicula p {
+    margin: 4px 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.genero {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#sinResultados {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin-top: 30px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #888;
+    font-size: 14px;
+}
